@@ -15,12 +15,16 @@ function Get-DllAssemblyInfo {
   The file name pattern to search for. Defaults to 'Microsoft.Owin.Cors.dll'.
 
 .EXAMPLE
-  Get-DllAssemblyInfo -Path . -Filter 'Microsoft.Owin.Cors.dll'
+  Get-DllAssemblyInfo -Path . -Filter 'Microsoft.Owin.Cors'
   # Lists version, public key token, and relative path for all matching DLLs under the current directory.
 
 .EXAMPLE
-  Get-DllAssemblyInfo -Path 'C:\Projects' -Filter '*.dll'
+  Get-DllAssemblyInfo -Path 'C:\Projects'
   # Lists info for all DLLs under C:\Projects.
+
+.EXAMPLE
+  Get-DllAssemblyInfo -Path 'C:\Projects' -Filter '*Cors*'
+  # Lists info for all DLLs under C:\Projects that contain `Cors` in their name.  
 
 .NOTES
   Author: SeanFu
