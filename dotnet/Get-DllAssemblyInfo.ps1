@@ -12,7 +12,7 @@ function Get-DllAssemblyInfo {
   The root directory to search. Defaults to the current directory ('.').
 
 .PARAMETER Filter
-  The file name pattern to search for. Defaults to 'Microsoft.Owin.Cors.dll'.
+  The file name pattern to search for. Defaults to '*.dll'.
 
 .EXAMPLE
   Get-DllAssemblyInfo -Path . -Filter 'Microsoft.Owin.Cors'
